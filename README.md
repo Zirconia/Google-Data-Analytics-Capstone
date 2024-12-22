@@ -15,7 +15,7 @@ members. But first, Cyclistic executives must approve my recommendations, so the
 
 ##Business Task
 
-Determine how casual riders and annual members use Cyclistic bikes differently in order to gain insights into methods for converting casuals to members.
+Determine how casual riders and annual members use Cyclistic bikes differently in order to develop marketing methods for converting casuals to members.
 
 ##Data Sources
 
