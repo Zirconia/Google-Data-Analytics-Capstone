@@ -42,6 +42,10 @@ duplicate trips, and trips less than 1 minute in length.
 Trips missing start or end stations were removed.
 
 ```
+SELECT * FROM trips_original;
+```
+![alt text](/null_stations.png)
+```
 DELETE FROM trips
 WHERE (start_station_name IS NULL AND start_station_id IS NULL) 
 OR (end_station_name IS NULL AND end_station_id IS NULL);
