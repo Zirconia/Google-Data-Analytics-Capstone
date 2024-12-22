@@ -33,3 +33,39 @@ START_LNG: the longitude of the start station <br />
 END_LAT: the latitude of the end station <br />
 END_LNG: the longitude of the end station <br />
 MEMBER_CASUAL: single-ride or full-day pass are casual riders. annual memberships are members
+
+## Data Processing
+
+After downloading the 12 files of interest, I imported them into an Oracle SQL database and combined them into a single "trips" table using the SQL Developer IDE's graphical user interface. Then, I proceeded to explore the data, where I found missing values, format discrepancies,
+duplicate trips, and trips less than 1 minute in length.
+
+Trips missing start or end stations were removed.
+
+```
+DELETE FROM trips
+WHERE (start_station_name IS NULL AND start_station_id IS NULL) 
+OR (end_station_name IS NULL AND end_station_id IS NULL);
+```
+
+Trips from June 2024 to November 2024 include milliseconds in their start and end times, but trips from December 2023 to May 2024 do not. The milliseconds were removed from the timestamps so that the format of the data would be consistent.
+
+```
+```
+
+Duplicate trips were found as a result of the same trip being in multiple csv files. This is because there are trips that start on the last day of one month and end on the first day of the next. As a result, a trip like that would end up in two different month's files. Duplicates were removed. 
+
+```
+```
+
+Trips less than one minute were removed (potentially false starts or users trying to re-dock a bike to ensure it was secure). 
+
+```
+```
+
+Code was run to remove any leading and trailing whitespace from various column's values just in case any unwanted whitespace was present
+
+```
+```
+
+
+
