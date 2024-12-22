@@ -20,16 +20,16 @@ Determine how casual riders and annual members use Cyclistic bikes differently i
 ## Data Sources
 
 I used csv files that contain trip data for the previous 12 months(December 2023 to November 2024), which can be found [here](https://divvy-tripdata.s3.amazonaws.com/index.html). Information within the files is as follows: <br /> <br />
-RIDE_ID    a unique identifier for the trip <br />
-RIDEABLE_TYPE    the type of vehicle <br />
-STARTED_AT    the date and time that the trip started <br />
-ENDED_AT    the date and time that the trip ended <br />
-START_STATION_NAME    the station at which the trip began <br />
-START_STATION_ID    the id of the station at which the trip began <br />
-END_STATION_NAME    the station at which the trip ended <br />
-END_STATION_ID    the id of the station at which the trip ended <br />
-START_LAT    the latitude of the start station <br />
-START_LNG    the longitude of the start station <br />
-END_LAT    the latitude of the end station <br />
-END_LNG    the longitude of the end station <br />
-MEMBER_CASUAL    Customers who purchase single-ride or full-day passes are referred to as casual riders. Customers who purchase annual memberships are Cyclistic members
+RIDE_ID        a unique identifier for the trip <br />
+RIDEABLE_TYPE        the type of vehicle <br />
+STARTED_AT        the date and time that the trip started <br />
+ENDED_AT        the date and time that the trip ended <br />
+START_STATION_NAME        the station at which the trip began <br />
+START_STATION_ID        the id of the station at which the trip began <br />
+END_STATION_NAME        the station at which the trip ended <br />
+END_STATION_ID        the id of the station at which the trip ended <br />
+START_LAT        the latitude of the start station <br />
+START_LNG        the longitude of the start station <br />
+END_LAT        the latitude of the end station <br />
+END_LNG        the longitude of the end station <br />
+MEMBER_CASUAL        Customers who purchase single-ride or full-day passes are referred to as casual riders. Customers who purchase annual memberships are Cyclistic members
